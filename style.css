@@ -65,18 +65,34 @@ nav {
     gap: 1.5rem;
 }
 
+
+/* === Updated Navigation Button Styles === */
 .nav-links a {
     color: white;
     text-decoration: none;
     transition: all 0.3s;
     font-weight: 600;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px; /* Added for better button shape */
 }
 
+/* Change hover from yellow to blue */
 .nav-links a:hover {
-    color: var(--yellow);
+    color: var(--blue);
+    background: white; /* White background on hover */
 }
 
+/* Special style for the Zoom button */
+.nav-links a.btn-outline {
+    border: 2px solid white; /* Changed from yellow to white */
+    color: white;
+}
+
+.nav-links a.btn-outline:hover {
+    background: white;
+    color: var(--blue);
+    border-color: white;
+}
 /* === Hero Section === */
 .hero {
     background: linear-gradient(rgba(0, 65, 101, 0.8), rgba(0, 65, 101, 0.8)), 
