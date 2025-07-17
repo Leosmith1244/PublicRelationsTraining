@@ -1,4 +1,14 @@
-nav { background: red !important; }
+/* === FORCE NAVIGATION STYLES === */
+nav {
+    background: var(--blue) !important;
+    color: white !important;
+}
+
+.nav-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
 /* === TOASTMASTERS BRAND COLORS === */
 :root {
     --maroon: #772432;
