@@ -23,46 +23,56 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        /* Navigation */
-        nav {
-            background: var(--blue);
-            color: white;
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+/* === Fixed Navigation Styles === */
+nav {
+    background: var(--blue); /* Using the Toastmasters blue */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    width: 100%;
+}
 
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--yellow);
-            text-decoration: none;
-        }
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--yellow); /* Toastmasters yellow */
+    text-decoration: none;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-        }
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 600;
+}
 
-        .nav-links a:hover {
-            color: var(--yellow);
-        }
+.nav-links a:hover {
+    color: var(--yellow);
+}
+
+/* Make sure body has no margin/padding pushing content */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: var(--white);
+}       
 
         /* Hero Section */
         .hero {
